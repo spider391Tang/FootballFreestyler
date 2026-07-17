@@ -47,6 +47,37 @@ if (eventSection && !eventSection.querySelector("[data-event-date]")) {
   document.querySelector("[data-event-nav]")?.remove();
 }
 
+const competitionDialog = document.querySelector("[data-competition-dialog]");
+const competitionOpenButton = document.querySelector("[data-competition-open]");
+const competitionCloseButton = document.querySelector("[data-competition-close]");
+
+const openCompetitionDialog = () => {
+  if (!competitionDialog) return;
+  if (typeof competitionDialog.showModal === "function") {
+    competitionDialog.showModal();
+  } else {
+    competitionDialog.setAttribute("open", "");
+  }
+  document.body.classList.add("dialog-open");
+};
+
+const closeCompetitionDialog = () => {
+  if (!competitionDialog) return;
+  if (typeof competitionDialog.close === "function") {
+    competitionDialog.close();
+  } else {
+    competitionDialog.removeAttribute("open");
+  }
+  document.body.classList.remove("dialog-open");
+};
+
+competitionOpenButton?.addEventListener("click", openCompetitionDialog);
+competitionCloseButton?.addEventListener("click", closeCompetitionDialog);
+competitionDialog?.addEventListener("close", () => document.body.classList.remove("dialog-open"));
+competitionDialog?.addEventListener("click", (event) => {
+  if (event.target === competitionDialog) closeCompetitionDialog();
+});
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const revealItems = document.querySelectorAll("[data-reveal]");
 
