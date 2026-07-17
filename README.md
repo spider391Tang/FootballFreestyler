@@ -16,6 +16,7 @@ python3 -m http.server 8000
 
 - 個人介紹與表演理念
 - 夏姬 Natsuki 與親子花式足球共同演出介紹
+- 夏姬 breaking 跨界、父女技巧與世壯運親子演出的 YouTube Shorts
 - Fukuoka Freestyle Open 2026 賽事故事、得獎紀錄與照片互動視窗
 - 舞台演出、街頭互動、教學工作坊服務
 - 演出照片精選
