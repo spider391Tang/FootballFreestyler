@@ -770,6 +770,8 @@ body.dialog-open { overflow: hidden; }
 .performance-social-art small { position: relative; margin-top: 30px; font: 800 9px/1 var(--sans); letter-spacing: .24em; }
 .performance-westin-art { color: white; background: #14334c; }
 .performance-westin-art::before { border-color: rgba(255,255,255,.3); }
+.performance-cts-art { color: white; background: #1b4298; }
+.performance-cts-art::before { border-color: rgba(255,255,255,.3); }
 .performance-feature-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(32px, 4vw, 62px); }
 .performance-feature-copy h3 { margin: 18px 0 18px; font-size: clamp(40px, 5vw, 70px); line-height: 1; letter-spacing: -.045em; }
 .performance-feature-copy > p:not(.eyebrow) { margin: 0; color: rgba(255,255,255,.58); font-size: 13px; }
