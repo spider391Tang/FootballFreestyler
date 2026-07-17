@@ -762,6 +762,21 @@ body.dialog-open { overflow: hidden; }
 .honor-list h3 { margin: 0; font-size: 16px; line-height: 1.4; }
 .honor-list p { margin: 0; color: #596164; font-size: 13px; }
 .honor-list span { justify-self: end; font: 700 9px/1 var(--sans); letter-spacing: .15em; }
+.honor-video {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  padding: 9px 11px;
+  color: white;
+  background: var(--ink);
+  font: 700 9px/1 var(--sans);
+  letter-spacing: .09em;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+.honor-video:hover { color: var(--ink); background: white; transform: translateY(-2px); }
+.honor-video:focus-visible { outline: 3px solid var(--family-pink); outline-offset: 3px; }
 
 .contact { position: relative; display: grid; place-items: center; min-height: 850px; padding: 120px clamp(22px, 6vw, 96px); color: white; background: var(--ink); overflow: hidden; isolation: isolate; }
 .contact-photo { position: absolute; z-index: -3; inset: 0; }
@@ -882,6 +897,7 @@ body.dialog-open { overflow: hidden; }
   .honor-list article { grid-template-columns: 68px 1fr; gap: 10px 18px; }
   .honor-list p { grid-column: 2; }
   .honor-list span { display: none; }
+  .honor-video { grid-column: 2; justify-self: start; min-width: 0; margin-top: 4px; }
 
   .contact { min-height: 760px; padding: 100px 22px; }
   .contact-wash { background: rgba(9,11,12,.77); }
