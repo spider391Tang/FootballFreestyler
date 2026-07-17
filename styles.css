@@ -753,6 +753,15 @@ body.dialog-open { overflow: hidden; }
 .gallery-item figcaption { position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 24px; display: flex; align-items: end; justify-content: space-between; gap: 30px; }
 .gallery-item strong { font-size: 19px; }
 .gallery-item span { color: var(--acid); font: 700 9px/1 var(--sans); letter-spacing: .18em; }
+.performance-feature { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(320px, .65fr); max-width: var(--max); margin: clamp(60px, 8vw, 110px) auto 0; border: 1px solid var(--line-dark); background: var(--ink-soft); }
+.performance-video { position: relative; aspect-ratio: 16 / 9; background: #000; }
+.performance-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.performance-feature-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(32px, 4vw, 62px); }
+.performance-feature-copy h3 { margin: 18px 0 18px; font-size: clamp(40px, 5vw, 70px); line-height: 1; letter-spacing: -.045em; }
+.performance-feature-copy > p:not(.eyebrow) { margin: 0; color: rgba(255,255,255,.58); font-size: 13px; }
+.performance-feature-copy a { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 34px; padding: 16px 0 0; border-top: 1px solid var(--line-dark); color: var(--acid); font-size: 10px; font-weight: 800; letter-spacing: .08em; }
+.performance-feature-copy a:hover { color: white; }
+.performance-feature-copy i { font-style: normal; font-size: 18px; }
 
 .honors { background: var(--paper); }
 .honor-list { max-width: var(--max); margin: 0 auto; border-top: 1px solid var(--ink); }
@@ -908,6 +917,8 @@ body.dialog-open { overflow: hidden; }
   .gallery-item { width: 100%; height: 390px; }
   .gallery-item.gallery-wide { height: 480px; }
   .gallery-item figcaption { left: 18px; right: 18px; bottom: 17px; align-items: start; flex-direction: column; gap: 6px; }
+  .performance-feature { grid-template-columns: 1fr; }
+  .performance-feature-copy { min-height: 330px; }
   .honor-list article { grid-template-columns: 68px 1fr; gap: 10px 18px; }
   .honor-list p { grid-column: 2; }
   .honor-list span { display: none; }
