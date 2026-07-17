@@ -266,14 +266,21 @@
               帶來少見又充滿溫度的親子花式足球演出。
             </p>
 
-            <article class="family-award">
+            <button
+              class="family-award"
+              type="button"
+              data-competition-open
+              aria-haspopup="dialog"
+              aria-controls="fukuoka-dialog"
+            >
               <time>2026</time>
               <div>
                 <p>日本福岡國際花式足球大賽</p>
                 <h3>最佳新人獎</h3>
                 <span>BREAKING × FREESTYLE FOOTBALL</span>
               </div>
-            </article>
+              <span class="family-award-action">賽事故事與照片 <i aria-hidden="true">↗</i></span>
+            </button>
 
             <div class="family-booking">
               <span>親子共同演出</span>
@@ -283,6 +290,104 @@
           </div>
         </div>
       </section>
+
+      <dialog
+        id="fukuoka-dialog"
+        class="competition-dialog"
+        data-competition-dialog
+        aria-labelledby="fukuoka-title"
+      >
+        <div class="competition-dialog-shell">
+          <button class="competition-close" type="button" data-competition-close aria-label="關閉賽事介紹">
+            <span>關閉</span><i aria-hidden="true">×</i>
+          </button>
+
+          <div class="competition-hero">
+            <figure>
+              <img
+                src="assets/photos/Natsuki/20260619/DSC_8963 (1).jpeg"
+                alt="夏姬在 Fukuoka Freestyle Open 舞台上以 breaking 定格動作結合花式足球"
+                width="2089"
+                height="3156"
+                loading="lazy"
+              />
+              <figcaption>NATSUKI · BREAKING FREEZE</figcaption>
+            </figure>
+
+            <div class="competition-intro">
+              <p class="eyebrow"><span></span> Fukuoka Freestyle Open 2026</p>
+              <h2 id="fukuoka-title">在國際舞台，<br />跳出自己的<span>節奏。</span></h2>
+              <p class="competition-lead">
+                這不只是一場比賽，也是夏姬第一次讓 breaking 與花式足球，
+                在國際舞台上真正成為自己的表演語言。
+              </p>
+
+              <dl class="competition-facts">
+                <div><dt>日期</dt><dd>2026.06.20</dd></div>
+                <div><dt>地點</dt><dd>日本福岡・MONOGRAM</dd></div>
+                <div><dt>規模</dt><dd>11 個國家／地區・60+ 位選手</dd></div>
+                <div><dt>賽制</dt><dd>男女 1 on 1・LOWER Battle</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <section class="competition-story" aria-labelledby="competition-about-title">
+            <div>
+              <p class="competition-kicker">ABOUT THE EVENT</p>
+              <h3 id="competition-about-title">福岡首場國際級<br />花式足球盛會</h3>
+            </div>
+            <div>
+              <p>
+                FUKUOKA FREESTYLE OPEN 是福岡首度舉辦、列入世界花式足球協會
+                WFFA 活動資訊的國際賽事。來自世界各地的選手在 30 秒回合中，
+                以控球技術、創意、音樂性與個人風格正面交鋒。
+              </p>
+              <p>
+                夏姬選擇走出不同的路：把 breaking 的 footwork、freeze 與地板動作融入足球，
+                讓球跟著身體一起旋轉、停格。這份大膽又鮮明的舞台表現，讓她拿下最佳新人獎。
+              </p>
+            </div>
+          </section>
+
+          <section class="competition-highlight" aria-label="夏姬得獎資訊">
+            <span>2026</span>
+            <p>FUKUOKA FREESTYLE OPEN</p>
+            <strong>BEST ROOKIE AWARD<br />最佳新人獎</strong>
+          </section>
+
+          <div class="competition-gallery">
+            <figure>
+              <img
+                src="assets/photos/Natsuki/20260619/DSC_0505_0.jpg"
+                alt="夏姬手持 Fukuoka Freestyle Open 最佳新人獎與參賽選手合照"
+                width="3936"
+                height="2624"
+                loading="lazy"
+              />
+              <figcaption><strong>第一次站上國際賽舞台</strong><span>BEST ROOKIE AWARD</span></figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/photos/Natsuki/20260619/DSC_0733.jpeg"
+                alt="Fukuoka Freestyle Open 2026 全體選手與工作人員合照"
+                width="3936"
+                height="2624"
+                loading="lazy"
+              />
+              <figcaption><strong>11 個國家與地區的選手齊聚福岡</strong><span>FUKUOKA 2026</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="competition-sources">
+            <p>賽事資訊</p>
+            <div>
+              <a href="https://www.instagram.com/fukuokafreestyleopen/" target="_blank" rel="noreferrer">官方 Instagram <span aria-hidden="true">↗</span></a>
+              <a href="https://fukuokafreestyleopen.studio.site/" target="_blank" rel="noreferrer">大賽官方網站 <span aria-hidden="true">↗</span></a>
+              <a href="https://worldfreestylefootball.org/events/fukuoka2026/" target="_blank" rel="noreferrer">WFFA 賽事頁面 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </dialog>
 
       <section id="services" class="section services">
         <div class="section-number" aria-hidden="true">03</div>
