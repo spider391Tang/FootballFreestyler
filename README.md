@@ -1,32 +1,25 @@
-# FootballFreestyler
-## 簡介
-我是唐心磊，一位熱愛足球的花式足球運動員，人生最大的夢想就是把花式足球推廣給更多人看。
-## 獎項
-- **2022**
-  - 韓國花式足球世界盃海外邀請選手
-  - 第五屆巨城街頭藝術節-評審最佳獎 🏆
-  - 真。街頭藝人大賽-最佳創意獎 🏆
-  - WickCup 花式足球評審
-  - 獲選新北市街頭藝人手冊封面團體
-- **2021**
-  - 街頭作品實驗室第六季明日之星
-  - 成立福爾摩沙客花式足球團隊
-- **2020**
-  - 日本足球協會足球挑戰活動金獎 🏆
-- **2019**
-  - Okinawa FreestyleFootball Open Top 16 🏆
-  - 中國&亞太花式足球錦標賽團體表演賽冠軍 🏆
-  - Hug 花式籃足球大賽評審 
-  - 亞洲盃入選決賽 32 強 🏆
-  - 中國入選決賽 16 強 🏆
-- **2018**
-  - BallerTime 團體表演賽季軍 🏆
-  - WickCup 跨界 Battle 冠軍 🏆
-  - WickCup 團體表演賽冠軍 🏆
-  - WickCup 個人賽季軍 🏆
-- **2017**
-  - WickCup 季軍 🏆
-- **2016**
-  - The Kings Cup 季軍 🏆
-- **2015**
-  - BTOB 花式足球人氣王 🏆
+# 唐心磊 Spider｜Freestyle Football
+
+花式足球運動員、街頭藝人與教練唐心磊的個人形象網站。
+
+網站以純 HTML、CSS 與 JavaScript 製作，不需要建置工具，可直接部署到 GitHub Pages。
+
+## 本機預覽
+
+```bash
+python3 -m http.server 8000
+```
+
+開啟 `http://localhost:8000`。
+
+## 網站內容
+
+- 個人介紹與表演理念
+- 舞台演出、街頭互動、教學工作坊服務
+- 演出照片精選
+- 重要獎項與經歷
+- Instagram、Facebook 與 YouTube 聯絡入口
+
+## GitHub Pages
+
+在 repository 的 **Settings → Pages** 中，選擇從 `main` 分支根目錄部署即可。
