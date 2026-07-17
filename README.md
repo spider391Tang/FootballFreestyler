@@ -21,7 +21,7 @@ python3 -m http.server 8000
 - Fukuoka Freestyle Open 2026 賽事故事、得獎紀錄與照片互動視窗
 - 舞台演出、街頭互動、教學工作坊服務
 - 演出照片精選
-- 重要獎項與經歷
+- 重要獎項、經歷與代表演出影片
 - Instagram、Facebook 與 YouTube 聯絡入口
 
 ## GitHub Pages
