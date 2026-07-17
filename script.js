@@ -24,6 +24,29 @@ nav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const taipeiDateParts = new Intl.DateTimeFormat("en", {
+  timeZone: "Asia/Taipei",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).formatToParts(new Date());
+const taipeiDateValues = Object.fromEntries(
+  taipeiDateParts.map(({ type, value }) => [type, value]),
+);
+const taipeiDate = `${taipeiDateValues.year}-${taipeiDateValues.month}-${taipeiDateValues.day}`;
+
+const eventSection = document.querySelector("[data-event-section]");
+const eventCards = eventSection?.querySelectorAll("[data-event-date]") ?? [];
+
+eventCards.forEach((eventCard) => {
+  if (eventCard.dataset.eventDate < taipeiDate) eventCard.remove();
+});
+
+if (eventSection && !eventSection.querySelector("[data-event-date]")) {
+  eventSection.remove();
+  document.querySelector("[data-event-nav]")?.remove();
+}
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const revealItems = document.querySelectorAll("[data-reveal]");
 
