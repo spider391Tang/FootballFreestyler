@@ -252,6 +252,22 @@ if (storyFeature && !aboutSection.querySelector(".brazil-story")) {
   document.head.appendChild(brazilStyles);
 }
 
+const honorList = document.querySelector("#honors .honor-list");
+
+if (honorList && !honorList.querySelector("[data-summer-circus-2026]")) {
+  honorList.insertAdjacentHTML(
+    "afterbegin",
+    `
+      <article data-summer-circus-2026>
+        <time>2026</time>
+        <h3>臺中夏日馬戲節<br />Juggling Battle 邀請賽</h3>
+        <p>團體賽冠軍</p>
+        <a class="honor-video" href="https://www.facebook.com/share/r/19EXXkP5hy/?mibextid=wwXIfr" target="_blank" rel="noreferrer" aria-label="觀看 2026 臺中夏日馬戲節 Juggling Battle 團體賽冠軍紀錄">觀看奪冠紀錄 ↗</a>
+      </article>
+    `,
+  );
+}
+
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const revealItems = document.querySelectorAll("[data-reveal]");
 
