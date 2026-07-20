@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>演出合作與花式足球教學｜唐心磊</title>
 
-    <!-- 共用字型與樣式；合作卡片與雙欄網格由 pages.css 管理。 -->
+    <!--
+      共用字型與樣式；合作卡片與雙欄網格由 pages.css 管理，
+      花蓮萬家福活動照片、影片與 RWD 位於 services-event.css。
+    -->
     <link rel="icon" href="assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +19,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="pages.css" />
+    <link rel="stylesheet" href="services-event.css" />
   </head>
   <body>
     <!--
@@ -126,6 +130,203 @@
             </p>
           </article>
         </div>
+      </section>
+
+      <!--
+        2026 花蓮萬家福合作案例：原始照片與影片皆保存於 repository，
+        圖片以 WebP srcset 優先載入並保留 JPEG fallback；影片不自動播放。
+      -->
+      <section
+        class="page-section event-story"
+        id="hualien-wanjiafu-2026"
+        aria-labelledby="hualien-event-title"
+      >
+        <header class="event-story-heading" data-reveal>
+          <div>
+            <p class="eyebrow">
+              <span></span>
+              Collaboration Case · 2026.07.18
+            </p>
+            <h2 id="hualien-event-title">
+              2026 花蓮萬家福
+              <span>世界盃主題演出</span>
+            </h2>
+          </div>
+          <div class="event-story-copy">
+            <p>
+              配合 2026 世界盃期間活動，受邀前往花蓮萬家福進行花式足球演出與互動教學。從雙人技巧演出、現場控球挑戰，到帶領大小朋友近距離體驗花式足球，讓足球不只停留在賽事轉播，也真正走進觀眾的生活與現場。
+            </p>
+            <p>
+              家樂福近期以「萬家福」新名稱與大家見面，這次也透過世界盃主題活動，讓民眾在逛賣場的同時，感受足球、節奏與街頭藝術的熱血魅力。
+            </p>
+            <ul class="event-tags" aria-label="活動內容">
+              <li>雙人演出</li>
+              <li>親子觀賞</li>
+              <li>互動教學</li>
+            </ul>
+          </div>
+        </header>
+
+        <!-- 活動照片：四種畫面分別呈現演出、觀眾、教學與全場參與。 -->
+        <div class="event-gallery" aria-label="花蓮萬家福活動照片" data-reveal>
+          <figure class="event-photo">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/media/20260718-hualien-wanjiafu/duo-handstand-960.webp   960w,
+                  assets/media/20260718-hualien-wanjiafu/duo-handstand-1440.webp 1440w
+                "
+                sizes="(max-width: 900px) 100vw, 58vw"
+              />
+              <img
+                src="assets/media/20260718-hualien-wanjiafu/duo-handstand.jpg"
+                width="1477"
+                height="1108"
+                loading="lazy"
+                decoding="async"
+                alt="雙人花式足球演出中，一位演出者倒立控球，現場觀眾近距離觀看"
+              />
+            </picture>
+            <figcaption>
+              <strong>雙人技巧演出</strong>
+              <span>DUO PERFORMANCE</span>
+            </figcaption>
+          </figure>
+          <figure class="event-photo">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/media/20260718-hualien-wanjiafu/duo-ball-control-960.webp   960w,
+                  assets/media/20260718-hualien-wanjiafu/duo-ball-control-1440.webp 1440w
+                "
+                sizes="(max-width: 900px) 100vw, 42vw"
+              />
+              <img
+                src="assets/media/20260718-hualien-wanjiafu/duo-ball-control.jpg"
+                width="1477"
+                height="1108"
+                loading="lazy"
+                decoding="async"
+                alt="兩位花式足球演出者在觀眾面前同步以額頭控球"
+              />
+            </picture>
+            <figcaption>
+              <strong>默契控球</strong>
+              <span>LIVE MOMENT</span>
+            </figcaption>
+          </figure>
+          <figure class="event-photo">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/media/20260718-hualien-wanjiafu/workshop-guidance-960.webp   960w,
+                  assets/media/20260718-hualien-wanjiafu/workshop-guidance-1440.webp 1440w
+                "
+                sizes="(max-width: 900px) 100vw, 42vw"
+              />
+              <img
+                src="assets/media/20260718-hualien-wanjiafu/workshop-guidance.jpg"
+                width="1477"
+                height="1108"
+                loading="lazy"
+                decoding="async"
+                alt="教練帶領多位孩子練習以身體控制足球"
+              />
+            </picture>
+            <figcaption>
+              <strong>近距離互動教學</strong>
+              <span>WORKSHOP</span>
+            </figcaption>
+          </figure>
+          <figure class="event-photo">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  assets/media/20260718-hualien-wanjiafu/workshop-group-960.webp   960w,
+                  assets/media/20260718-hualien-wanjiafu/workshop-group-1440.webp 1440w
+                "
+                sizes="(max-width: 900px) 100vw, 58vw"
+              />
+              <img
+                src="assets/media/20260718-hualien-wanjiafu/workshop-group.jpg"
+                width="1706"
+                height="960"
+                loading="lazy"
+                decoding="async"
+                alt="兩位演出者與參加花式足球體驗的孩子們開心合照"
+              />
+            </picture>
+            <figcaption>
+              <strong>足球走進生活現場</strong>
+              <span>TOGETHER</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- 精選直式影片：使用原生 controls，保留使用者對播放與音量的控制。 -->
+        <div class="event-video-section" data-reveal>
+          <div class="event-video-heading">
+            <p class="section-kicker">VIDEO HIGHLIGHTS</p>
+            <h3>從演出到互動，<span>一起進入現場。</span></h3>
+          </div>
+          <div class="event-video-grid">
+            <article class="event-video-card">
+              <div class="event-video-frame">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/media/20260718-hualien-wanjiafu/duo-performance-poster.jpg"
+                  aria-label="雙人花式足球演出精選影片"
+                >
+                  <source
+                    src="assets/media/20260718-hualien-wanjiafu/duo-performance.mp4"
+                    type="video/mp4"
+                  />
+                  你的瀏覽器無法播放這支影片。
+                  <a href="assets/media/20260718-hualien-wanjiafu/duo-performance.mp4">
+                    下載雙人演出影片
+                  </a>
+                </video>
+              </div>
+              <div class="event-video-copy">
+                <p>01 · PERFORMANCE</p>
+                <h4>雙人花式足球</h4>
+                <p>以同步控球與搭檔默契，把技巧、節奏和舞台張力帶到觀眾眼前。</p>
+              </div>
+            </article>
+            <article class="event-video-card">
+              <div class="event-video-frame">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/media/20260718-hualien-wanjiafu/workshop-interaction-poster.jpg"
+                  aria-label="親子花式足球互動教學精選影片"
+                >
+                  <source
+                    src="assets/media/20260718-hualien-wanjiafu/workshop-interaction.mp4"
+                    type="video/mp4"
+                  />
+                  你的瀏覽器無法播放這支影片。
+                  <a href="assets/media/20260718-hualien-wanjiafu/workshop-interaction.mp4">
+                    下載互動教學影片
+                  </a>
+                </video>
+              </div>
+              <div class="event-video-copy">
+                <p>02 · WORKSHOP</p>
+                <h4>現場控球挑戰</h4>
+                <p>讓大小朋友拿起足球親自嘗試，在挑戰與歡笑中認識花式足球。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
         <a class="back-home" href="index.html">← 回首頁</a>
       </section>
     </main>
