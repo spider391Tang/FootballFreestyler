@@ -1,0 +1,245 @@
+/* 花蓮萬家福 2026 活動專題：照片與原生直式影片。 */
+.event-story {
+  border-top: 1px solid rgba(255, 255, 255, .12);
+}
+
+.event-story-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+  gap: clamp(32px, 7vw, 90px);
+  align-items: start;
+  margin-bottom: 44px;
+}
+
+.event-story-heading h2 {
+  margin: 14px 0 0;
+}
+
+.event-story-heading h2 span {
+  display: block;
+  color: var(--acid);
+}
+
+.event-story-copy p {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, .68);
+}
+
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-tags li {
+  padding: 8px 12px;
+  color: var(--acid);
+  border: 1px solid rgba(200, 255, 26, .34);
+  font: 700 10px/1 var(--sans);
+  letter-spacing: .12em;
+}
+
+.event-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.event-photo {
+  position: relative;
+  grid-column: span 7;
+  min-height: 340px;
+  overflow: hidden;
+  margin: 0;
+  background: #050607;
+}
+
+.event-photo:nth-child(2),
+.event-photo:nth-child(3) {
+  grid-column: span 5;
+}
+
+.event-photo picture {
+  display: block;
+  height: 100%;
+}
+
+.event-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 450ms ease, transform 700ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.event-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(9, 11, 12, .82), transparent 52%);
+  pointer-events: none;
+}
+
+.event-photo:hover img {
+  filter: saturate(1.08);
+  transform: scale(1.025);
+}
+
+.event-photo figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 22px;
+  bottom: 20px;
+  left: 22px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.event-photo strong {
+  font-size: 16px;
+}
+
+.event-photo span {
+  color: var(--acid);
+  font: 700 9px/1 var(--sans);
+  letter-spacing: .14em;
+}
+
+.event-video-section {
+  margin-top: clamp(58px, 8vw, 96px);
+}
+
+.event-video-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.event-video-heading h3 {
+  max-width: 700px;
+  margin: 0;
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 1;
+}
+
+.event-video-heading h3 span {
+  color: var(--acid);
+}
+
+.event-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.event-video-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+  background: #14181a;
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.event-video-frame {
+  background: #050607;
+}
+
+.event-video-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+.event-video-copy {
+  align-self: end;
+  padding: 24px 20px;
+}
+
+.event-video-copy > p:first-child {
+  margin: 0 0 12px;
+  color: var(--acid);
+  font: 700 9px/1 var(--sans);
+  letter-spacing: .14em;
+}
+
+.event-video-copy h4 {
+  margin: 0 0 12px;
+  font-size: clamp(23px, 2.5vw, 34px);
+  line-height: 1.1;
+}
+
+.event-video-copy > p:last-child {
+  margin: 0;
+  color: rgba(255, 255, 255, .58);
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .event-story-heading,
+  .event-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-photo,
+  .event-photo:nth-child(2),
+  .event-photo:nth-child(3) {
+    grid-column: span 6;
+  }
+
+  .event-video-card {
+    grid-template-columns: minmax(250px, .8fr) minmax(0, 1.2fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .event-story-heading {
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+
+  .event-gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .event-photo,
+  .event-photo:nth-child(2),
+  .event-photo:nth-child(3) {
+    grid-column: auto;
+    min-height: 290px;
+  }
+
+  .event-photo figcaption,
+  .event-video-heading {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .event-photo figcaption {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .event-video-card {
+    display: block;
+  }
+
+  .event-video-frame {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-photo img {
+    transition: none;
+  }
+}
